@@ -76,6 +76,8 @@ rm -f acinclude.m4
 %{__automake}
 # no sdl test, because it requires configured wine to work
 %configure \
+	--host=%{_host} \
+	--target=%{target} \
 	--with-sdl-prefix=%{arch} \
 	--disable-sdltest \
 	--enable-bmp \
