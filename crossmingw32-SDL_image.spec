@@ -92,7 +92,7 @@ rm -f acinclude.m4
 	--enable-tga \
 	--disable-shared
 
-%{__make}
+%{__make} libSDL_image.la
 
 %{__cc} --shared IMG*.o -Wl,--enable-auto-image-base -o SDL_image.dll -Wl,--out-implib,libSDL_image.dll.a -lSDL -lpng -ljpeg
 
