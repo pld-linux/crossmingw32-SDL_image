@@ -1,39 +1,39 @@
---- SDL_image-1.2.0/configure.in~	Sun Dec  2 09:01:35 2001
-+++ SDL_image-1.2.0/configure.in	Sun Dec  2 09:02:10 2001
-@@ -99,9 +99,7 @@
+--- SDL_image-1.2.1/configure.in.orig	Thu Dec  6 02:51:15 2001
++++ SDL_image-1.2.1/configure.in	Fri Jan 11 12:34:27 2002
+@@ -105,9 +105,7 @@
          CFLAGS="$CFLAGS -DLOAD_JPG"
          IMG_LIBS="$IMG_LIBS -ljpeg"
      else
--        AC_MSG_WARN(
+-        AC_MSG_WARN([
 -*** Unable to find JPEG library (http://www.ijg.org/)
 -])
 +        AC_MSG_WARN([*** Unable to find JPEG library (http://www.ijg.org/)])
          AC_MSG_WARN([JPG image loading disabled])
      fi
  fi
-@@ -117,15 +115,11 @@
+@@ -129,15 +127,11 @@
  if test x$enable_png = xyes; then
      AC_CHECK_LIB(png, png_create_read_struct, have_libpng=yes, , -lz)
      if test x$have_libpng != xyes; then
 -        AC_MSG_WARN([
--*** Unable to find PNG library (http://www.cdrom.com/pub/png/)
+-*** Unable to find PNG library (http://www.libpng.org/pub/png/libpng.html)
 -])
-+        AC_MSG_WARN([*** Unable to find PNG library (http://www.cdrom.com/pub/png/)])
++        AC_MSG_WARN([*** Unable to find PNG library (http://www.libpng.org/pub/png/libpng.html)])
      fi
      AC_CHECK_LIB(z, uncompress, have_libz=yes)
      if test x$have_libz != xyes; then
 -        AC_MSG_WARN([
--*** Unable to find Zlib library (http://www.cdrom.com/pub/infozip/zlib/)
+-*** Unable to find Zlib library (http://www.gzip.org/zlib/)
 -])
-+        AC_MSG_WARN([*** Unable to find Zlib library (http://www.cdrom.com/pub/infozip/zlib/)])
++        AC_MSG_WARN([*** Unable to find Zlib library (http://www.gzip.org/zlib/)])
      fi
      if test x$have_libpng = xyes -a x$have_libz = xyes; then
          CFLAGS="$CFLAGS -DLOAD_PNG"
-@@ -155,9 +149,7 @@
+@@ -167,9 +161,7 @@
          CFLAGS="$CFLAGS -DLOAD_TIF"
          IMG_LIBS="$IMG_LIBS -ltiff"
      else
--        AC_MSG_WARN(
+-        AC_MSG_WARN([
 -*** Unable to find Tiff library (ftp://ftp.sgi.com/graphics/tiff/)
 -])
 +        AC_MSG_WARN([*** Unable to find Tiff library (ftp://ftp.sgi.com/graphics/tiff/)])
