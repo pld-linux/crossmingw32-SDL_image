@@ -10,16 +10,17 @@ Source0:	http://www.libsdl.org/projects/SDL_image/release/%{realname}-%{version}
 # Source0-md5:	d55826ffbd2bdc48b09cc64a9ed9e59e
 Patch0:		%{realname}-ac_fixes.patch
 URL:		http://www.libsdl.org/projects/SDL_image/
-Requires:	crossmingw32-runtime
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	crossmingw32-SDL
 BuildRequires:	crossmingw32-gcc
 BuildRequires:	crossmingw32-libjpeg
 BuildRequires:	crossmingw32-libpng
-BuildRequires:	crossmingw32-SDL
 BuildRequires:	crossmingw32-w32api
 BuildRequires:	crossmingw32-zlib
 BuildRequires:	libtool
+Requires:	crossmingw32-SDL
+Requires:	crossmingw32-runtime
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		no_install_post_strip	1
