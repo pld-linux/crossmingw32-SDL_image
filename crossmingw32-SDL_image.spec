@@ -124,4 +124,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files dll
 %defattr(644,root,root,755)
-%{_datadir}/wine/windows/system
+%{_datadir}/wine/windows/system/*.dll
