@@ -2,13 +2,12 @@
 Summary:	Simple DirectMedia Layer - Sample Image Loading Library - Mingw32 cross version
 Summary(pl):	Przyk³adowa biblioteka do ³adowania obrazków - wersja skro¶na dla Mingw32
 Name:		crossmingw32-%{realname}
-Version:	1.2.4
+Version:	1.2.5
 Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	http://www.libsdl.org/projects/SDL_image/release/%{realname}-%{version}.tar.gz
-# Source0-md5:	70bf617f99e51a2c94550fc79d542f0b
-Patch0:		%{realname}-ac_fixes.patch
+# Source0-md5:	cd006109a73bf7dcc93e1c3ed15ee782
 URL:		http://www.libsdl.org/projects/SDL_image/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -61,7 +60,6 @@ Group:		Applications/Emulators
 
 %prep
 %setup -q -n %{realname}-%{version}
-%patch0 -p1
 
 %build
 CC=%{target}-gcc ; export CC
@@ -82,6 +80,7 @@ rm -f acinclude.m4
 %{__automake}
 # no sdl test, because it requires configured wine to work
 %configure \
+	png_lib=png.dll \
 	--host=%{_host} \
 	--target=%{target} \
 	--with-sdl-prefix=%{arch} \
