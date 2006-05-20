@@ -61,6 +61,8 @@ Group:		Applications/Emulators
 %prep
 %setup -q -n %{realname}-%{version}
 
+rm -f acinclude.m4
+
 %build
 CC=%{target}-gcc ; export CC
 CXX=%{target}-g++ ; export CXX
@@ -73,7 +75,6 @@ RANLIB=%{target}-ranlib ; export RANLIB
 LDSHARED="%{target}-gcc -shared" ; export LDSHARED
 TARGET="%{target}" ; export TARGET
 
-rm -f acinclude.m4
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
