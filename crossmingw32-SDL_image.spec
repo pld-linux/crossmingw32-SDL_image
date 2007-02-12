@@ -1,6 +1,6 @@
 %define		realname	SDL_image
 Summary:	Simple DirectMedia Layer - Sample Image Loading Library - Mingw32 cross version
-Summary(pl.UTF-8):   Przykładowa biblioteka do ładowania obrazków - wersja skrośna dla Mingw32
+Summary(pl.UTF-8):	Przykładowa biblioteka do ładowania obrazków - wersja skrośna dla Mingw32
 Name:		crossmingw32-%{realname}
 Version:	1.2.5
 Release:	1
@@ -49,7 +49,7 @@ następujące formaty: BMP, PPM, PCX, GIF, JPEG oraz PNG.
 
 %package dll
 Summary:	%{realname} - DLL library for Windows
-Summary(pl.UTF-8):   %{realname} - biblioteka DLL dla Windows
+Summary(pl.UTF-8):	%{realname} - biblioteka DLL dla Windows
 Group:		Applications/Emulators
 
 %description dll
