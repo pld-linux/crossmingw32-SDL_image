@@ -1,6 +1,6 @@
 %define		realname	SDL_image
 Summary:	Simple DirectMedia Layer - Sample Image Loading Library - Mingw32 cross version
-Summary(pl):	Przyk³adowa biblioteka do ³adowania obrazków - wersja skro¶na dla Mingw32
+Summary(pl.UTF-8):   PrzykÅ‚adowa biblioteka do Å‚adowania obrazkÃ³w - wersja skroÅ›na dla Mingw32
 Name:		crossmingw32-%{realname}
 Version:	1.2.5
 Release:	1
@@ -42,20 +42,20 @@ This is a simple library to load images of various formats as SDL
 surfaces. This library currently supports BMP, PPM, PCX, GIF, JPEG,
 and PNG formats.
 
-%description -l pl
-Jest to prosta biblioteka s³u¿±ca do ³adowania ró¿nego formatu
-obrazków jako powierzchni SDL. W chwili obecnej biblioteka obs³uguje
-nastêpuj±ce formaty: BMP, PPM, PCX, GIF, JPEG oraz PNG.
+%description -l pl.UTF-8
+Jest to prosta biblioteka sÅ‚uÅ¼Ä…ca do Å‚adowania rÃ³Å¼nego formatu
+obrazkÃ³w jako powierzchni SDL. W chwili obecnej biblioteka obsÅ‚uguje
+nastÄ™pujÄ…ce formaty: BMP, PPM, PCX, GIF, JPEG oraz PNG.
 
 %package dll
 Summary:	%{realname} - DLL library for Windows
-Summary(pl):	%{realname} - biblioteka DLL dla Windows
+Summary(pl.UTF-8):   %{realname} - biblioteka DLL dla Windows
 Group:		Applications/Emulators
 
 %description dll
 %{realname} - DLL library for Windows.
 
-%description dll -l pl
+%description dll -l pl.UTF-8
 %{realname} - biblioteka DLL dla Windows.
 
 %prep
