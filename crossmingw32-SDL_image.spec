@@ -7,7 +7,7 @@ Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://www.libsdl.org/projects/SDL_image/release/%{realname}-%{version}.tar.gz
-# Source0-md5:	cd006109a73bf7dcc93e1c3ed15ee782
+# Source0-md5:	b866dc4f647517bdaf57f6ffdefd013e
 URL:		http://www.libsdl.org/projects/SDL_image/
 BuildRequires:	autoconf
 BuildRequires:	automake
