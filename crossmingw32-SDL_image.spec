@@ -2,19 +2,21 @@
 Summary:	Simple DirectMedia Layer - Sample Image Loading Library - MinGW32 cross version
 Summary(pl.UTF-8):	Przykładowa biblioteka do ładowania obrazków - wersja skrośna dla MinGW32
 Name:		crossmingw32-%{realname}
-Version:	1.2.10
+Version:	1.2.11
 Release:	1
-License:	LGPL v2.1+
+License:	Zlib-like
 Group:		Libraries
 Source0:	http://www.libsdl.org/projects/SDL_image/release/%{realname}-%{version}.tar.gz
-# Source0-md5:	6c06584b31559e2b59f2b982d0d1f628
+# Source0-md5:	1210d7a7e87ab95abebb4f3e79a0fd31
 URL:		http://www.libsdl.org/projects/SDL_image/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	crossmingw32-SDL >= 1.2.10
 BuildRequires:	crossmingw32-gcc
 BuildRequires:	crossmingw32-libjpeg >= 7
-BuildRequires:	crossmingw32-libpng >= 1.2.0
+BuildRequires:	crossmingw32-libpng >= 1.4.0
+BuildRequires:	crossmingw32-libtiff >= 4
+BuildRequires:	crossmingw32-libwebp >= 0.1
 BuildRequires:	crossmingw32-w32api
 BuildRequires:	libtool >= 2:2.0
 BuildRequires:	pkgconfig >= 1:0.9.0
