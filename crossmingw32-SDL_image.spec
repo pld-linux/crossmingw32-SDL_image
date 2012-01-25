@@ -2,21 +2,21 @@
 Summary:	Simple DirectMedia Layer - Sample Image Loading Library - MinGW32 cross version
 Summary(pl.UTF-8):	Przykładowa biblioteka do ładowania obrazków - wersja skrośna dla MinGW32
 Name:		crossmingw32-%{realname}
-Version:	1.2.11
+Version:	1.2.12
 Release:	1
 License:	Zlib-like
 Group:		Libraries
 Source0:	http://www.libsdl.org/projects/SDL_image/release/%{realname}-%{version}.tar.gz
-# Source0-md5:	1210d7a7e87ab95abebb4f3e79a0fd31
+# Source0-md5:	a0f9098ebe5400f0bdc9b62e60797ecb
 URL:		http://www.libsdl.org/projects/SDL_image/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	crossmingw32-SDL >= 1.2.10
 BuildRequires:	crossmingw32-gcc
 BuildRequires:	crossmingw32-libjpeg >= 7
-BuildRequires:	crossmingw32-libpng >= 1.4.0
+BuildRequires:	crossmingw32-libpng >= 1.5.0
 BuildRequires:	crossmingw32-libtiff >= 4
-BuildRequires:	crossmingw32-libwebp >= 0.1
+BuildRequires:	crossmingw32-libwebp >= 0.1.3
 BuildRequires:	crossmingw32-w32api
 BuildRequires:	libtool >= 2:2.0
 BuildRequires:	pkgconfig >= 1:0.9.0
@@ -46,15 +46,16 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This is a simple library to load images of various formats as SDL
-surfaces. This library currently supports BMP, PPM, PCX, GIF, JPEG,
-and PNG formats.
+surfaces. This library currently supports BMP, GIF, JPEG, LBM, PCX,
+PNG, PNM (PBM/PGM/PPM), TGA, TIFF, WebP, XCF and XPM formats.
 
 This package contains the cross version for Win32.
 
 %description -l pl.UTF-8
 Jest to prosta biblioteka służąca do ładowania różnego formatu
 obrazków jako powierzchni SDL. W chwili obecnej biblioteka obsługuje
-następujące formaty: BMP, PPM, PCX, GIF, JPEG oraz PNG.
+następujące formaty: BMP, GIF, JPEG, LBM, PCX, PNG, PNM (PBM/PGM/PPM),
+TGA, TIFF, WebP, XCF oraz XPM.
 
 Ten pakiet zawiera wersję skrośną dla Win32.
 
